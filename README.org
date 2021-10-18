@@ -53,8 +53,8 @@ file.
 ** EDTS
 | Key binding | Description                  |
 |-------------+------------------------------|
-| ~ M . ~     | EDTS find source under point |
-| ~ M , ~     | EDTS find source unwind      |
+| ~M .~       | EDTS find source under point |
+| ~M ,~       | EDTS find source unwind      |
 | ~C-c C-d w~ | EDTS find who call           |
 | ~C-c C-d~   | EDTS extra commands          |
 
