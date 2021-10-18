@@ -1,6 +1,6 @@
 #+TITLE: erlang_ts layer
 
-#+TAGS: erlang|layer|multi-paradigm|programming|edts|erl-trace
+#+TAGS: erlang|layer|edts|multi-paradigm|programming|erl-trace
 
 [[img/erlang_ts.png]]
 
@@ -13,20 +13,20 @@
 
 * Description
 This layer adds support for [[https://erlang.org/][Erlang]].
-Using EDTS for code navigation.
+Use [[https://github.com/sebastiw/edts][EDTS]] for code navigation.
 
 ** Features:
-  - erlang
-  - edts
-  - er-trace
-  - company
-  - flycheck
+  + erlang
+  + edts
+  + erl-trace : simple erlang debug tool by put io:format in erlang files
+  + company
+  + flycheck
 
 * Install
 
 Firstly, clone the layer to your spacemacs private directory
   #+BEGIN_SRC bash
-  git clone https://github.com/datttnwork7247/erlang_ts.git ~/.emacs.d/private
+  git clone https://github.com/datttnwork7247/erlang_ts.git ~/.emacs.d/private/erlang_ts
   #+END_SRC
 
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
@@ -54,7 +54,7 @@ file.
 | Key binding | Description                  |
 |-------------+------------------------------|
 | ~M .~       | EDTS find source under point |
-| ~M ,~       | EDTS find source unwind      |
+| ~M , ~      | EDTS find source unwind      |
 | ~C-c C-d w~ | EDTS find who call           |
 | ~C-c C-d~   | EDTS extra commands          |
 
