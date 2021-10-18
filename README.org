@@ -1,0 +1,67 @@
+#+TITLE: erlang_ts layer
+
+#+TAGS: erlang|layer|multi-paradigm|programming|edts|erl-trace
+
+[[img/erlang_ts.png]]
+
+# TOC links should be GitHub style anchors.
+* Table of Contents                                       :TOC_4_gh:noexport:
+- [[#description][Description]]
+  - [[#features][Features:]]
+- [[#install][Install]]
+- [[#key-bindings][Key bindings]]
+
+* Description
+This layer adds support for [[https://erlang.org/][Erlang]].
+Using EDTS for code navigation.
+
+** Features:
+  - erlang
+  - edts
+  - er-trace
+  - company
+  - flycheck
+
+* Install
+
+Firstly, clone the layer to your spacemacs private directory
+  #+BEGIN_SRC bash
+  git clone https://github.com/datttnwork7247/erlang_ts.git ~/.emacs.d/private
+  #+END_SRC
+
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =erlang_ts= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+
+* Key bindings
+** erlang_ts
+| Key binding | Description                                                     |
+|-------------+-----------------------------------------------------------------|
+| ~C-c C-a~   | Align arrows ("->")                                             |
+| ~C-c C-c~   | Comment region                                                  |
+| ~C-c C-d~   | Display function manual at point                                |
+| ~C-c C-j~   | Generate a new clause                                           |
+| ~C-c C-q~   | Indent function                                                 |
+| ~C-c C-u~   | Uncomment region                                                |
+| ~C-c C-y~   | Insert, at the point, the argument list of the previous clause. |
+| ~C-c C-z~   | Display the erlang-shell or start a new                         |
+| ~C-c M-a~   | Move backward to previous start of clause.                      |
+| ~C-c M-e~   | Move to the end of the current clause.                          |
+| ~C-c M-h~   | Put mark at end of clause, point at beginning.                  |
+
+** EDTS
+| Key binding | Description                  |
+|-------------+------------------------------|
+| ~M .~       | EDTS find source under point |
+| ~M ,~       | EDTS find source unwind      |
+| ~C-c C-d w~ | EDTS find who call           |
+| ~C-c C-d~   | EDTS extra commands          |
+
+** erl-trace
+| Key binding | Description                                 |
+|-------------+---------------------------------------------|
+| ~C-c C-t~   | erl-trace insert trace under clause         |
+| ~C-c C-e~   | erl-trace extra commands                    |
+| ~C-c C-r~   | erl-trace store parameter (used in C-c C-t) |
+
