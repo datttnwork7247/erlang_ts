@@ -25,11 +25,7 @@
     company
     erlang
     ;; my edts
-    (edts :location (recipe
-                     :fetcher github
-                     :repo "datttnwork7247/edts"
-                     :files ("*")
-                     ))
+    edts
     flycheck
     ;; my erl-trace
     (erl-trace :location (recipe
